@@ -1,5 +1,8 @@
 # dsh-steam-library
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/HuaGyuu/dsh-steam-library?display_name=tag)](https://github.com/HuaGyuu/dsh-steam-library/releases)
+
 一个 DeepSeek Harness（DSH）插件：在左侧栏加入 **Steam 游戏库** 面板，读取 Steam Web API，展示拥有的游戏、游玩时长、最近游玩与成就进度；同时为模型提供 `get_my_steam_games` 工具。
 
 > Steam Web API Key 与 SteamID64 都在插件自己的设置里填写，不存在于代码或仓库中。
@@ -79,4 +82,4 @@ Host 侧 `SteamLibrary` 是唯一的数据实现，路由与工具都调用它�
 
 ## 许可
 
-未声明许可证。
+[MIT](LICENSE) © HuaGyuu

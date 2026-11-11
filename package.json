@@ -33,6 +33,7 @@
     "locale/*.json",
     "icon.svg"
   ],
+  "license": "MIT",
   "engines": {
     "node": ">=20"
   },
