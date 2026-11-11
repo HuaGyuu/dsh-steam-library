@@ -1,0 +1,53 @@
+{
+  "name": "dsh-steam-library",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Steam 游戏库侧栏面板：读取 Steam Web API 的拥有游戏、游玩时长与成就进度。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "steam",
+    "steam-web-api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuaGyuu/dsh-steam-library.git"
+  },
+  "homepage": "https://github.com/HuaGyuu/dsh-steam-library#readme",
+  "bugs": {
+    "url": "https://github.com/HuaGyuu/dsh-steam-library/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    },
+    "manifestVersion": 1
+  },
+  "icon": "./icon.svg"
+}

@@ -1,0 +1,7 @@
+- insert:
+    - id: steam-library
+      name: dsh-steam-library
+      config:
+        apiKey: ''
+        steamId: ''
+        bypassTlsCheck: false

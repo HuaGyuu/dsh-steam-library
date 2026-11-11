@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Steam 游戏库",
+    "description": "在左侧栏加入 Steam 面板，展示库里的游戏、游玩时长与成就进度，并向模型提供 get_my_steam_games 工具。"
+  }
+}

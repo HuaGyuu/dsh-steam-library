@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Steam library",
+    "description": "Adds a sidebar panel that shows your Steam games, playtime and achievement progress, plus a get_my_steam_games tool for the agent."
+  }
+}
