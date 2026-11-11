@@ -1,6 +1,6 @@
 # dsh-steam-library
 
-一个 [DeepSeek Harness](https://github.com/HuaGyuu)（DSH）插件：在左侧栏加入 **Steam 游戏库** 面板，读取 Steam Web API，展示拥有的游戏、游玩时长、最近游玩与成就进度；同时为模型提供 `get_my_steam_games` 工具。
+一个 DeepSeek Harness（DSH）插件：在左侧栏加入 **Steam 游戏库** 面板，读取 Steam Web API，展示拥有的游戏、游玩时长、最近游玩与成就进度；同时为模型提供 `get_my_steam_games` 工具。
 
 > Steam Web API Key 与 SteamID64 都在插件自己的设置里填写，不存在于代码或仓库中。
 
@@ -19,13 +19,19 @@
 
 ## 安装
 
-插件是一个 DSH bundle（`package.json` 中声明 `dsh.bundle.patch`）。在 DSH 里安装：
+插件是一个 DSH bundle（`package.json` 中声明 `dsh.bundle.patch`）。先把仓库放到本地任意目录，再让 DSH 从这个目录安装：
+
+```powershell
+git clone https://github.com/HuaGyuu/dsh-steam-library.git D:\data\dsh-plugs\dsh-steam-library
+```
+
+然后在 DSH 里执行：
 
 ```text
 plugin_manager install_bundle  target=D:\data\dsh-plugs\dsh-steam-library
 ```
 
-安装后刷新页面，左侧栏出现 Steam 图标。
+安装完成后刷新页面，左侧栏出现 Steam 图标。
 
 ## 配置
 
